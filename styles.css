@@ -34,6 +34,9 @@ body::-webkit-scrollbar {
     margin-top: 20px;
     box-shadow: 3px 3px 5px 6px var(--neon-pink);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container-2 {
     margin-top: 40px;
