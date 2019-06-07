@@ -3,6 +3,7 @@
     --dark-space-gray: #4B4B4C;
     --neon-green: rgba(0, 214, 0, 0.95);
     --neon-aqua: rgba(0, 214, 214, 0.95);
+    --neon-yellow: rgba(252, 252, 42, 0.95);
 }
 body {
     margin: 0px;
@@ -10,6 +11,18 @@ body {
     box-sizing: border-box;
     background-color: black;
 }
+body::-webkit-scrollbar {
+    background-color: var(--dark-space-gray);
+    width:16px
+  }
+  body::-webkit-scrollbar-track {
+    background-color: var(--dark-space-gray);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--neon-pink);
+    border-radius:16px;
+    border:4px solid var(--dark-space-gray);
+  }
 [class*="container-"]{
     height: 300px;
     width: 300px;
@@ -17,9 +30,8 @@ body {
     margin: auto;
     border-radius: 20%;
 }
-
 .container-1 {
-    margin-top: 10px;
+    margin-top: 20px;
     box-shadow: 3px 3px 5px 6px var(--neon-pink);
 }
 .container-2 {
@@ -29,5 +41,22 @@ body {
 .container-3 {
     margin-top: 40px;
     box-shadow: 3px 3px 5px 6px var(--neon-aqua);
+}
+.container-4 {
+    margin-top: 40px;
+    box-shadow: 3px 3px 5px 6px var(--neon-yellow);
     margin-bottom: 40px;
+}
+/* tablet size */
+@media only screen and (min-width: 760px) {
+    [class*="container-"]{
+        height: 550px;
+        width: 550px;
+    }
+
+}
+
+/* desktop size */
+@media only screen and (min-width: 1200px) {
+
 }
