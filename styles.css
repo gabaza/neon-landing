@@ -4,6 +4,7 @@
     --neon-green: rgba(0, 214, 0, 0.95);
     --neon-aqua: rgba(0, 214, 214, 0.95);
     --neon-yellow: rgba(252, 252, 42, 0.95);
+    --neon-orange: rgba(255, 146, 5, 0.95);
 }
 body {
     margin: 0px;
@@ -46,7 +47,7 @@ h2 {
     background-color: var(--dark-space-gray);
     color: white;
     grid-column: 1/3;
-    box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px var(--neon-orange);
     padding: 20px;
     text-align: center;
     margin-top: 40px;
