@@ -1,6 +1,33 @@
+:root {
+    --neon-pink: rgba(214, 0, 214, 0.95);
+    --dark-space-gray: #4B4B4C;
+    --neon-green: rgba(0, 214, 0, 0.95);
+    --neon-aqua: rgba(0, 214, 214, 0.95);
+}
 body {
     margin: 0px;
     padding: 0px
     box-sizing: border-box;
     background-color: black;
+}
+[class*="container-"]{
+    height: 300px;
+    width: 300px;
+    background-color: var(--dark-space-gray);
+    margin: auto;
+    border-radius: 20%;
+}
+
+.container-1 {
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px 6px var(--neon-pink);
+}
+.container-2 {
+    margin-top: 40px;
+    box-shadow: 3px 3px 5px 6px var(--neon-green);
+}
+.container-3 {
+    margin-top: 40px;
+    box-shadow: 3px 3px 5px 6px var(--neon-aqua);
+    margin-bottom: 40px;
 }
