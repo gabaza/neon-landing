@@ -57,42 +57,48 @@ h2 {
     margin-top: 40px;
     margin-bottom: 0px;
 }
+.scroll-wrap {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
 .container-3 {
-    margin-top: 40px;
+    margin: 40px 20px;
     box-shadow: 3px 3px 5px 6px var(--neon-aqua);
     background-image: url(neon-portfolio.png);
     background-size: cover;
     background-position: center center;
+    display: inline-block;
 }
 .container-3:hover {
     background-image: url(portfolio-pic-01.jpg.png);
     box-shadow: none;
 }
 .container-4 {
-    margin-top: 40px;
+    margin: 40px 20px;
     box-shadow: 3px 3px 5px 6px var(--neon-yellow);
     background-image: url(neon-portfolio2.JPG);
     background-size: cover;
     background-position: center center;
-    margin-bottom: 40px;
+    display: inline-block;
 }
 .container-4:hover {
     background-image: url(portfolio-pic2.JPG);
     box-shadow: none; 
 }
 .container-5 {
-    margin-top: 40px;
+    margin: 40px 20px;
+    display: inline-block;
     box-shadow: 3px 3px 5px 6px var(--neon-red);
     margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
+    
 }
 .container-5 > i {
     font-size: 10em;
-    
-}
+    margin: 70px;
+    }
 /* tablet size */
 @media only screen and (min-width: 760px) {
     [class*="container-"]{
